@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Local agent workspaces and generated run output
+.claude/**/workspace/
+.claude/**/tmp/
+.codex/**/workspace/
+.codex/**/tmp/
+.cursor/**/workspace/
+.cursor/**/tmp/
+
+# OS/editor metadata
+.idea/

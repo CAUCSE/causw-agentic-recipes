@@ -1,0 +1,4 @@
+interface:
+  display_name: "CAUSW API Report Exporter"
+  short_description: "Export frontend-ready API markdown reports"
+  default_prompt: "Use $causw-api-report-exporter to export a frontend implementation report for selected CAUSW backend APIs."

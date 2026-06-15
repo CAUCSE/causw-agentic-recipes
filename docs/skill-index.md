@@ -2,8 +2,12 @@
 
 | 스킬 | 트리거 | 산출물 | 비고 |
 |------|--------|--------|------|
-| `causw-issue-writer` | 이슈 작성, 버그 이슈, 기능 이슈, 인프라 이슈, `gh issue` | `issue-draft-<type>-<topic>.md` | `.github/ISSUE_TEMPLATE` 기반 |
-| `causw-pr-writer` | PR 작성, PR 초안, pull request 작성 | `pr-draft-<branch>.md` | 기본 base 브랜치: `dev` |
+| `causw-backend-guide` | 새 API/도메인/기능 추가, 기존 코드 수정 | (문서 가이드, 산출물 없음) | Controller→Service→Reader/Writer→Repository 패턴 안내 |
+| `causw-api-report-exporter` | API 프론트 구현 문서, FE 전달용 API 명세, endpoint 보고서 | `.claude/out-docs/api-report-<topic>.md` | 실제 백엔드 구현 기반, 최종 리포트에는 백엔드 파일 경로 제외 |
+| `causw-issue-writer` | 이슈 작성, 버그 이슈, 기능 이슈, 인프라 이슈, `gh issue` | `.claude/out-docs/issue-draft-<type>-<topic>.md` | `.github/ISSUE_TEMPLATE` 기반 |
+| `causw-pr-writer` | PR 작성, PR 초안, pull request 작성 | `.claude/out-docs/pr-draft-<branch>.md` | 기본 base 브랜치: `dev` |
+| `causw-release-writer` | 릴리즈 노트 작성, release note 생성, `gh release` | `.claude/out-docs/release-note-<버전>.md` | main 브랜치 기준, 최신 태그로 다음 버전 자동 제안 |
+| `causw-test-guide` | 테스트 코드 작성, 단위/통합 테스트, Fixture 생성 | (문서 가이드, 산출물 없음) | 테스트 작성 시 반드시 사용 |
 | `causw-test-runner` | 테스트 실행, 테스트 실패 수정, 전체 테스트 통과 | 테스트 코드 수정 및 실행 결과 보고 | `src/test/`만 수정 |
 | `skill-creator` | 새 스킬 생성, 기존 스킬 개선, eval/benchmark | 스킬 디렉터리, eval 결과, 개선안 | 범용 메타 스킬 |
 

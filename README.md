@@ -35,8 +35,12 @@ CAUSW 백엔드 프로젝트를 위한 Agentic 자산(스킬, 커맨드, 문서)
 
 | 스킬 | 역할 |
 |------|------|
+| `causw-api-report-exporter` | 백엔드 API 구현을 분석해 FE 전달용 API 리포트 생성 |
+| `causw-backend-guide` | 패키지 구조/레이어 패턴 등 백엔드 코드 작성 가이드 |
 | `causw-issue-writer` | GitHub 이슈 템플릿 기반 이슈 초안 생성 |
 | `causw-pr-writer` | 브랜치 변경사항 기반 PR 초안 생성 |
+| `causw-release-writer` | main 대비 변경사항 기반 릴리즈 노트 초안 생성 |
+| `causw-test-guide` | 단위/통합 테스트 및 Fixture 작성 가이드 |
 | `causw-test-runner` | CAUSW 백엔드 테스트 실행 및 테스트 코드 수정 루프 |
 | `skill-creator` | 새 스킬 작성, 평가, 개선 |
 
